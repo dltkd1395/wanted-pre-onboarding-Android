@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="news"
+            type="com.qure.onboarding.model.News" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_2">
+
+
+        <ImageView
+            android:id="@+id/top_news_img"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/rectangle_3"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:newsImage="@{news.urlToImage}"/>
+
+
+        <TextView
+            android:id="@+id/top_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="40.2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="161dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/news_title"
+            android:text="@{news.title}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_news_img" />
+
+        <TextView
+            android:id="@+id/top_news_author"
+            android:layout_width="84dp"
+            android:layout_height="19.26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="227.74dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{news.author}"
+            android:textAppearance="@style/news_author"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_news_img" />
+
+        <TextView
+            android:id="@+id/top_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="19.26dp"
+            android:layout_marginTop="227.14dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textAppearance="@style/news_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/top_news_img"
+            app:timeText="@{news.publishedAt}"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
