@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
                         savedNewsListFragment = SavedNewsListFragment()
                         fragmentTransaction.beginTransaction()
-                            .add(R.id.main_frame, savedNewsListFragment!!).commit()
+                            .replace(R.id.main_frame, savedNewsListFragment!!).commit()
                         return@setOnItemSelectedListener true
                     }
                     else -> return@setOnItemSelectedListener true
