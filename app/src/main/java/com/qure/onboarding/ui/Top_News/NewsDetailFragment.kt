@@ -1,4 +1,4 @@
-package com.qure.onboarding.ui
+package com.qure.onboarding.ui.Top_News
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

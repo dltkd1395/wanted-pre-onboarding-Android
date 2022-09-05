@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:background="@color/white"
             android:clickable="true"
-            tools:context=".ui.NewsDetailFragment">
+            tools:context=".ui.Top_News.NewsDetailFragment">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/rectangle_1"

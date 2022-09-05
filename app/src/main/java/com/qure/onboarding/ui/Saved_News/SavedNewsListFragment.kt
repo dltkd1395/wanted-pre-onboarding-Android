@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.qure.onboarding.ui.Adapter.NewsAdapter
 import com.qure.onboarding.AdatperListener.NewsAdapterListener
-import com.qure.onboarding.ui.NewsDetailFragment
+import com.qure.onboarding.ui.Top_News.NewsDetailFragment
 import com.qure.onboarding.viewModel.NewsViewModel
 import com.qure.onboarding.R
 import com.qure.onboarding.Room.SavedDatabase

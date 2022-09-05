@@ -16,7 +16,6 @@ import com.qure.onboarding.viewModel.NewsViewModel
 import com.qure.onboarding.model.News
 import com.qure.onboarding.model.NewsBody
 import com.qure.onboarding.databinding.FragmentNewsListBinding
-import com.qure.onboarding.ui.NewsDetailFragment
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

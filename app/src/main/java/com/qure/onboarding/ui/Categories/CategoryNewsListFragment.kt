@@ -19,7 +19,7 @@ import com.qure.onboarding.model.Category
 import com.qure.onboarding.model.News
 import com.qure.onboarding.model.NewsBody
 import com.qure.onboarding.databinding.FragmentCategoryNewsListBinding
-import com.qure.onboarding.ui.NewsDetailFragment
+import com.qure.onboarding.ui.Top_News.NewsDetailFragment
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
