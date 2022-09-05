@@ -27,9 +27,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
-
     private fun bottomNavigationSelect() {
 
         val fragmentTransaction = supportFragmentManager
@@ -42,44 +39,27 @@ class MainActivity : AppCompatActivity() {
                 when (item.itemId) {
 
                     R.id.newslistFragment -> {
-                        if (newsListFragment == null) {
-                            newsListFragment= NewsListFragment()
-                            fragmentTransaction.beginTransaction().add(R.id.main_frame, newsListFragment!!).commit()
-                        }
 
-                        if (newsListFragment != null) fragmentTransaction.beginTransaction()
-                            .show(newsListFragment!!).commit()
-                        if (categoriesFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(categoriesFragment!!).commit()
-                        if (savedNewsListFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(savedNewsListFragment!!).commit()
+                        newsListFragment = NewsListFragment()
+                        fragmentTransaction.beginTransaction()
+                            .replace(R.id.main_frame, newsListFragment!!).commit()
+
+
                         return@setOnItemSelectedListener true
                     }
                     R.id.categoriesFragment -> {
-                        if (categoriesFragment == null) {
-                            categoriesFragment= CategoriesFragment()
-                            fragmentTransaction.beginTransaction().add(R.id.main_frame, categoriesFragment!!).commit()
-                        }
-                        if (newsListFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(newsListFragment!!).commit()
-                        if (categoriesFragment != null) fragmentTransaction.beginTransaction()
-                            .show(categoriesFragment!!).commit()
-                        if (savedNewsListFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(savedNewsListFragment!!).commit()
+
+                        categoriesFragment = CategoriesFragment()
+                        fragmentTransaction.beginTransaction()
+                            .replace(R.id.main_frame, categoriesFragment!!).commit()
+
                         return@setOnItemSelectedListener true
                     }
                     R.id.savedFragment -> {
-                        if (savedNewsListFragment == null) {
-                            savedNewsListFragment = SavedNewsListFragment()
-                            fragmentTransaction.beginTransaction().add(R.id.main_frame, savedNewsListFragment!!).commit()
-                        }
 
-                        if (newsListFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(newsListFragment!!).commit()
-                        if (categoriesFragment != null) fragmentTransaction.beginTransaction()
-                            .hide(categoriesFragment!!).commit()
-                        if (savedNewsListFragment != null) fragmentTransaction.beginTransaction()
-                            .show(savedNewsListFragment!!).commit()
+                        savedNewsListFragment = SavedNewsListFragment()
+                        fragmentTransaction.beginTransaction()
+                            .add(R.id.main_frame, savedNewsListFragment!!).commit()
                         return@setOnItemSelectedListener true
                     }
                     else -> return@setOnItemSelectedListener true

@@ -1,5 +1,6 @@
 package com.qure.onboarding.ui.Top_News
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -26,10 +27,16 @@ class NewsListFragment : Fragment(), NewsAdapterListener {
     private lateinit var binding : FragmentNewsListBinding
     private lateinit var topNewsAdapter : NewsAdapter
     private lateinit var viewModel : NewsViewModel
+    private lateinit var fcontext : Context
 
 
     private var datas = mutableListOf<News>()
 
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        fcontext=context
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -63,11 +70,11 @@ class NewsListFragment : Fragment(), NewsAdapterListener {
     }
 
     private fun setAdapter(datas : MutableList<News>){
-        topNewsAdapter = NewsAdapter(requireContext(),this)
+        topNewsAdapter = NewsAdapter(fcontext,this)
         topNewsAdapter.submitList(datas)
         binding.apply {
             topNewsRecyclerview.adapter = topNewsAdapter
-            topNewsRecyclerview.layoutManager = LinearLayoutManager(requireContext())
+            topNewsRecyclerview.layoutManager = LinearLayoutManager(fcontext)
         }
     }
 
