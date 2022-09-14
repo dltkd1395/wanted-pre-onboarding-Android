@@ -3,13 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
-        <variable
-            name="news"
-            type="com.qure.onboarding.model.News" />
-
-    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,7 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:newsImage="@{news.urlToImage}"/>
+           />
 
 
         <TextView
@@ -40,7 +34,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:textAppearance="@style/news_title"
-            android:text="@{news.title}"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/top_news_img" />
@@ -53,7 +47,6 @@
             android:layout_marginTop="227.74dp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="@{news.author}"
             android:textAppearance="@style/news_author"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/top_news_img" />

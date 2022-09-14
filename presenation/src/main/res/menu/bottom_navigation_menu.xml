@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/topNewsFragment"
+        android:title="@string/topnews"
+        android:icon="@drawable/ic_topnews"
+        />
+
+    <item
+        android:id="@+id/categoryFragment"
+        android:title="@string/categories"
+        android:icon="@drawable/ic_category"
+        />
+
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:title="@string/saved"
+        android:icon="@drawable/ic_saved" />
+
+</menu>

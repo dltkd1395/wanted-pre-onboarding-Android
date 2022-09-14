@@ -16,6 +16,25 @@
         <entry key="app/src/main/res/layout/item_category.xml" value="0.375" />
         <entry key="app/src/main/res/layout/item_new_list.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.16979166666666667" />
+        <entry key="presenation/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/ellipase_1.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/menu_selector_color.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/rectangle_1.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/rectangle_2.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/rectangle_3.xml" value="0.1" />
+        <entry key="presenation/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="presenation/src/main/res/layout/activity_main.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/fragment_bookmark.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/fragment_categories.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/fragment_category.xml" value="0.25" />
+        <entry key="presenation/src/main/res/layout/fragment_category_list.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/fragment_category_news_list.xml" value="0.15625" />
+        <entry key="presenation/src/main/res/layout/fragment_news_detail.xml" value="0.15625" />
+        <entry key="presenation/src/main/res/layout/fragment_news_list.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/fragment_top_news.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/item_category.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/layout/item_new_list.xml" value="0.16032608695652173" />
+        <entry key="presenation/src/main/res/menu/bottom_navigation_menu.xml" value="0.1703125" />
       </map>
     </option>
   </component>

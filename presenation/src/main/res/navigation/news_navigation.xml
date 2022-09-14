@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_navigation"
+    app:startDestination="@id/topNewsFragment">
+
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.qure.presenation.view.bookmark.BookmarkFragment"
+        android:label="BookmarkFragment" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.qure.presenation.view.category.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_categoryListFragment"
+            app:destination="@id/categoryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topNewsFragment"
+        android:name="com.qure.presenation.view.topnews.TopNewsFragment"
+        android:label="TopNewsFragment" >
+        <action
+            android:id="@+id/action_topNewsFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_topNewsFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+        <action
+            android:id="@+id/action_topNewsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.qure.presenation.view.topnews.NewsDetailFragment"
+        android:label="NewsDetailFragment">
+
+
+        <argument
+            android:name="item"
+            app:argType="com.qure.domain.model.News" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.qure.presenation.view.category.CategoryListFragment"
+        android:label="CategoryListFragment" >
+        <action
+            android:id="@+id/action_categoryListFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+</navigation>
