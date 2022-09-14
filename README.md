@@ -18,7 +18,7 @@
 
 ## 파일 구조
 
-# Data Layer
+### Data Layer
 
 ```bash
 ├── database
@@ -45,7 +45,7 @@
         └── BaseRepository.kt
 ```
 
-# Domain Layer
+### Domain Layer
 
 ```bash
 ├── model
@@ -65,7 +65,7 @@
     ├── ErrorType.kt
     └── RemoteErrorEmitter.kt
 ```
-# Presenation Layer
+### Presenation Layer
 
 ```bash
 ├── base
