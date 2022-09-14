@@ -1,6 +1,6 @@
 # 원티드 프리온보딩 Android 코스 사전과제
 
-<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=fat&logo=Android Studio&logoColor=white"> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=fat&logo=Kotlin&logoColor=white"> <img src="https://img.shields.io/badge/Retrofit2-FF9E2A?style=fat">
+<img src="https://img.shields.io/badge/Android Studio-3DDC84?style=fat&logo=Android Studio&logoColor=white"> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=fat&logo=Kotlin&logoColor=white"> <img src="https://img.shields.io/badge/Retrofit2+OkHttp3-FF9E2A?style=fat">
 
 
 ## 프로젝트 설명
