@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=fat&logo=Android Studio&logoColor=white"> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=fat&logo=Kotlin&logoColor=white"> <img src="https://img.shields.io/badge/Retrofit2+OkHttp3-FF9E2A?style=fat"> <img src="https://img.shields.io/badge/CleanArchitecture+MVVM-2ECCFA?style=fat">
 <br>
-<img src="https://img.shields.io/badge/Room-68BC71?style=fat"> <img src="https://img.shields.io/badge/Navigation-1578D3?style=fat"> <img src="https://img.shields.io/badge/Coroutine-EF2D5E?style=fat"> <img src="https://img.shields.io/badge/Hilt-F5DD99?style=fat"> <img src="https://img.shields.io/badge/Paging-79CC68?style=fat">
+<img src="https://img.shields.io/badge/Room-68BC71?style=fat"> <img src="https://img.shields.io/badge/Navigation-1578D3?style=fat"> <img src="https://img.shields.io/badge/Coroutine-EF2D5E?style=fat"> <img src="https://img.shields.io/badge/Hilt-FECC00?style=fat"> <img src="https://img.shields.io/badge/Paging-79CC68?style=fat">
 
 
 ## 프로젝트 설명
